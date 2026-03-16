@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mario J. Ramos — Scénariste · Réalisateur · Monteur</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ══════════════════════════════
+       LEFT PANEL — Bio & Resume
+  ══════════════════════════════ -->
+  <aside class="panel-left">
+
+    <!-- Headshot — replace src with your photo -->
+    <!-- <img src="headshot.jpg" alt="Mario J. Ramos" class="headshot"> -->
+    <div class="headshot-placeholder" title="Remplacer par votre photo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+        <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+      </svg>
+    </div>
+
+    <h1 class="panel-name">Mario J.<br>Ramos</h1>
+    <p class="panel-title">Scénariste &nbsp;·&nbsp; Réalisateur &nbsp;·&nbsp; Monteur</p>
+
+    <p class="panel-bio">
+      <!-- Replace with your own bio text -->
+      Conteur à travers les médias — de la websérie primée au jeu vidéo, du court métrage à la bande dessinée. Basé à Montréal, je développe des récits ancrés dans l'identité québécoise, que ce soit pour l'écran, le jeu ou la page.
+    </p>
+
+    <div class="disciplines" style="margin-bottom:28px">
+      <span class="chip chip-accent">Scénario</span>
+      <span class="chip chip-accent">Réalisation</span>
+      <span class="chip chip-accent">Montage</span>
+      <span class="chip chip-accent">Game Design</span>
+      <span class="chip chip-accent">Développement</span>
+    </div>
+
+    <!-- Experience -->
+    <p class="section-label">Expérience</p>
+    <ul class="timeline">
+      <li>
+        <span class="tl-year">2025</span>
+        <span class="tl-role">Game Designer</span>
+        <span class="tl-org">Chasse-Galerie (Pico-8)</span>
+      </li>
+      <li>
+        <span class="tl-year">2023</span>
+        <span class="tl-role">Scénariste</span>
+        <span class="tl-org">Mission Europe – Bande dessinée</span>
+      </li>
+      <li>
+        <span class="tl-year">2022</span>
+        <span class="tl-role">Scénariste · Réalisateur</span>
+        <span class="tl-org">Vie de Pro avec missharvey</span>
+      </li>
+      <li>
+        <span class="tl-year">2020</span>
+        <span class="tl-role">Consultant narratif</span>
+        <span class="tl-org">Bloodroots — Paper Cult Games</span>
+      </li>
+      <li>
+        <span class="tl-year">2011–2013</span>
+        <span class="tl-role">Scénariste (saisons 2 &amp; 3)</span>
+        <span class="tl-org">Temps Mort — TOU.TV / ARTV / Explora</span>
+      </li>
+      <li>
+        <span class="tl-year">2015</span>
+        <span class="tl-role">Scénariste · Réalisateur · Monteur</span>
+        <span class="tl-org">22h20, Heure de l'Est — court métrage</span>
+      </li>
+      <li>
+        <span class="tl-year">2015</span>
+        <span class="tl-role">Scénariste · Réalisateur</span>
+        <span class="tl-org">Projet-M — websérie</span>
+      </li>
+    </ul>
+
+    <!-- Education — add yours if needed -->
+    <!-- <p class="section-label">Formation</p>
+    <ul class="timeline">
+      <li>
+        <span class="tl-year">XXXX</span>
+        <span class="tl-role">Titre du diplôme</span>
+        <span class="tl-org">Nom de l'institution</span>
+      </li>
+    </ul> -->
+
+    <div class="contact-block">
+      <p class="section-label" style="margin-bottom:12px">Contact</p>
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h18v14H3V5zm0 0l9 8 9-8"/></svg>
+        <a href="mailto:mjramos86@gmail.com">mjramos86@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.5 11.5 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1.01l-2.2 2.18z"/></svg>
+        <a href="tel:4383218825">438-321-8825</a>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ══════════════════════════════
+       RIGHT PANEL — Projects Grid
+  ══════════════════════════════ -->
+  <main class="panel-right">
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <button class="fb active" data-f="all">Tout</button>
+      <button class="fb" data-f="film">Film</button>
+      <button class="fb" data-f="webserie">Websérie</button>
+      <button class="fb" data-f="jeu">Jeu vidéo</button>
+      <button class="fb" data-f="bd">Bande dessinée</button>
+      <span class="count" id="proj-count">9 projets</span>
+    </div>
+
+    <!-- Bento grid -->
+    <div class="bento" id="grid">
+
+      <a href="projet/chasse-galerie.html" class="card wide" data-cat="jeu">
+        <img src="https://mariojramos.com/wp-content/uploads/2025/03/chasse-galerie.png" alt="Chasse-Galerie" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-tag">Jeu vidéo</span>
+          <h2>Chasse-Galerie</h2>
+          <div class="card-roles">
+            <span class="chip">Game Designer</span>
+          </div>
+        </div>
+        <span class="card-year">2025</span>
+      </a>
+
+      <a href="projet/temps-mort.html" class="card tall" data-cat="webserie">
+        <img src="https://mariojramos.com/wp-content/uploads/2015/01/76883_10151271764670090_1441845522_n.jpg" alt="Temps Mort" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-tag">Websérie</span>
+          <h2>Temps Mort</h2>
+          <div class="card-roles">
+            <span class="chip">Scénariste</span>
+          </div>
+        </div>
+        <span class="card-year">2011–2013</span>
+      </a>
+
+      <a href="projet/projet-m.html" class="card" data-cat="webserie">
+        <img src="https://mariojramos.com/wp-content/uploads/2015/01/1234352_351280698339808_512749331_n.jpg" alt="Projet-M" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-tag">Websérie</span>
+          <h2>Projet-M</h2>
+          <div class="card-roles">
+            <span class="chip">Scénariste</span>
+            <span class="chip">Réalisateur</span>
+          </div>
+        </div>
+        <span class="card-year">2015</span>
+      </a>
+
+      <a href="projet/mission-europe.html" class="card tall" data-cat="bd">
+        <img src="https://mariojramos.com/wp-content/uploads/2015/01/capture-d_ecc81cran-2017-01-24-acc80-18-42-40.png" alt="Mission Europe" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-tag">Bande dessinée</span>
+          <h2>Mission Europe</h2>
+          <div class="card-roles">
+            <span class="chip">Scénariste</span>
+          </div>
+        </div>
+        <span class="card-year">2023</span>
+      </a>
+
+      <a href="projet/bloodroots.html" class="card" data-cat="jeu">
+        <img src="https://mariojramos.com/wp-content/uploads/2020/04/maxresdefault.jpg" alt="Bloodroots" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-tag">Jeu vidéo</span>
+          <h2>Bloodroots</h2>
+          <div class="card-roles">
+            <span class="chip">Consultant narratif</span>
+          </div>
+        </div>
+        <span class="card-year">2020</span>
+      </a>
+
+      <a href="projet/vie-de-pro.html" class="card wide" data-cat="webserie">
+        <img src="https://mariojramos.com/wp-content/uploads/2022/03/vie-de-pro.png" alt="Vie de Pro avec missharvey" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-tag">Websérie</span>
+          <h2>Vie de Pro avec missharvey</h2>
+          <div class="card-roles">
+            <span class="chip">Scénariste</span>
+            <span class="chip">Réalisateur</span>
+          </div>
+        </div>
+        <span class="card-year">2022</span>
+      </a>
+
+      <a href="projet/rox-willful.html" class="card" data-cat="jeu">
+        <img src="https://mariojramos.com/wp-content/uploads/2016/02/13002570_1077480162325912_2321356132749837090_o.jpg" alt="Rox Willful" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-tag">Jeu vidéo</span>
+          <h2>The Unfortunate Adventures of Rox Willful</h2>
+          <div class="card-roles">
+            <span class="chip">Scénariste</span>
+          </div>
+        </div>
+        <span class="card-year">2016</span>
+      </a>
+
+      <a href="projet/deux-chats-blancs.html" class="card" data-cat="bd">
+        <img src="https://mariojramos.com/wp-content/uploads/2015/10/capture-d_ecc81cran-2017-01-24-acc80-19-10-22.png" alt="Deux chats blancs" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-tag">Bande dessinée</span>
+          <h2>Deux chats blancs</h2>
+          <div class="card-roles">
+            <span class="chip">Scénariste</span>
+          </div>
+        </div>
+        <span class="card-year">2015</span>
+      </a>
+
+      <a href="projet/22h20.html" class="card wide" data-cat="film">
+        <img src="https://mariojramos.com/wp-content/uploads/2015/01/capture-d_ecc81cran-2017-01-24-acc80-20-22-22.png" alt="22h20, Heure de l'Est" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-tag">Film</span>
+          <h2>22h20, Heure de l'Est</h2>
+          <div class="card-roles">
+            <span class="chip">Scénariste</span>
+            <span class="chip">Réalisateur</span>
+            <span class="chip">Monteur</span>
+          </div>
+        </div>
+        <span class="card-year">2013</span>
+      </a>
+
+    </div><!-- /bento -->
+  </main>
+
+</div><!-- /layout -->
+
+<script>
+  const btns = document.querySelectorAll('.fb');
+  const cards = document.querySelectorAll('.card');
+  const countEl = document.getElementById('proj-count');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.f;
+      let visible = 0;
+      cards.forEach(c => {
+        const show = f === 'all' || c.dataset.cat === f;
+        c.classList.toggle('hidden', !show);
+        if (show) visible++;
+      });
+      countEl.textContent = visible + ' projet' + (visible > 1 ? 's' : '');
+    });
+  });
+</script>
+
+</body>
+</html>
