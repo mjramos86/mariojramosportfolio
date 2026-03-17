@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'insomnie – Vidéoclip — Mario J. Ramos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="detail-header">
+  <a href="index.html" class="back-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M5 12l7 7M5 12l7-7"/></svg>
+    Retour
+  </a>
+  <span class="detail-site-name">Mario J. Ramos</span>
+</header>
+
+<div class="detail-body">
+
+  <!-- Remplacer par une vraie image si disponible -->
+  <!-- <img class="detail-hero" src="linsomnie.jpg" alt="L'insomnie"> -->
+
+  <div class="detail-meta">
+    <div class="detail-meta-left">
+      <div class="detail-category">Vidéoclip</div>
+      <h1 class="detail-title">L'insomnie</h1>
+      <div class="detail-roles">
+        <span class="chip chip-accent">Scénariste</span>
+        <span class="chip chip-accent">Réalisateur</span>
+      </div>
+    </div>
+    <div class="detail-year">2014</div>
+  </div>
+
+  <div class="sep"></div>
+
+  <p class="detail-description">
+    Vidéoclip de la chanson <em>L'insomnie</em> par Marc Gravel de Laval, tirée de l'album « L'Anthologie ».
+  </p>
+
+  <div class="video-wrap">
+    <!-- <iframe src="https://www.youtube.com/embed/YOUR_YOUTUBE_ID" allowfullscreen allow="autoplay; encrypted-media"></iframe> -->
+    <div class="video-placeholder">
+      <div class="play-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <p>Remplacer par l'identifiant YouTube</p>
+    </div>
+  </div>
+
+  <nav class="proj-nav">
+    <a href="le-jardin-develyne.html" class="proj-nav-item">
+      <span class="proj-nav-label">← Projet précédent</span>
+      <span class="proj-nav-title">Le Jardin d'Evelyne</span>
+    </a>
+    <a href="22h20.html" class="proj-nav-item right">
+      <span class="proj-nav-label">Projet suivant →</span>
+      <span class="proj-nav-title">22h20, Heure de l'Est</span>
+    </a>
+  </nav>
+
+</div>
+</body>
+</html>
